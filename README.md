@@ -32,6 +32,21 @@ This is a real-time collaborative Todo List web application built with React, No
 1. Clone the repository:
    ```bash
    git clone https://github.com/parambhandari/sample_todo.git
-   cd todo-app-frontend
-## start command for backend  => npm start
-## start command for frontend  => npm start
+   
+2. Navigate to the frontend directory: cd frontend
+3. Install dependencies:npm install
+4. Run the frontend:npm start
+
+### Backend
+
+1. Navigate to the backend directory:cd backend
+2. Install dependencies:npm install
+3. Set up your environment variables in a .env file:
+PORT=your_port
+MONGO_URI=your_mongo_db_uri
+JWT_TOKEN=your_jwt_secret_key
+4. Run the backend:npm start
+
+
+
+
