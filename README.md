@@ -34,18 +34,20 @@ This is a real-time collaborative Todo List web application built with React, No
    git clone https://github.com/parambhandari/sample_todo.git
    
 2. Navigate to the frontend directory: cd frontend
-3. Install dependencies: npm install
-4. Run the frontend: npm start
+3. Set the WebSocket frontend URL: const SOCKET_URL = "http://localhost:BACKEND_PORT";
+4. Install dependencies: npm install
+5. Run the frontend: npm start
 
 ### Backend
 
 1. Navigate to the backend directory:cd backend
 2. Install dependencies: npm install
-3. Set up your environment variables in a .env file:
+3. Set the WebSocket backend URL: origin:"http://localhost:FRONTEND_PORT"
+4. Set up your environment variables in a .env file:
 PORT=your_port,
 MONGO_URI=your_mongo_db_uri,
 JWT_TOKEN=your_jwt_secret_key,
-4. Run the backend: npm start
+5. Run the backend: npm start
 
 
 
