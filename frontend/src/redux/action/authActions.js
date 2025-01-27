@@ -40,7 +40,7 @@ export const login = (emailOrMobile, password) => async (dispatch) => {
     });
     localStorage.setItem("accessToken", response.data.accessToken);
     dispatch({ type: LOGIN_SUCCESS, payload: response.data });
-    dispatch(loadUser());
+    dispatch(loadUser()); 
   } catch (error) {
     dispatch({
       type: LOGIN_FAIL,

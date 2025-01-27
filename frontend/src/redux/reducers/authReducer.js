@@ -27,6 +27,7 @@ const authReducer = (state = initialState, action) => {
         token: action.payload.accessToken,
         loading: false,
         error: null,
+        isAuthenticated: true,
       };
     case LOGIN_FAIL:
       return {
@@ -41,6 +42,7 @@ const authReducer = (state = initialState, action) => {
         token: action.payload.accessToken,
         loading: false,
         error: null,
+        isAuthenticated: true,
       };
     case SIGNUP_FAIL:
       return {
@@ -54,6 +56,7 @@ const authReducer = (state = initialState, action) => {
         user: null,
         token: null,
         error: null,
+        isAuthenticated: false,
       };
       case EMPLOYEE_LOADING:
         return {
